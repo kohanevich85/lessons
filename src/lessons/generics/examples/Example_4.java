@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.generics.examples;
 
 /**
  * Examples of Generic Methods

@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.generics.examples;
 
 /**
  * Example of using generics

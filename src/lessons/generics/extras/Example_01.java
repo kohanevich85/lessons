@@ -1,6 +1,4 @@
-package lessons.generics.examples;
-
-import java.util.List;
+package lessons.generics.extras;
 
 public class Example_01 {
 

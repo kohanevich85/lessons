@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.generics.examples;
 
 import java.util.List;
 

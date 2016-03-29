@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.generics.examples;
 
 /**
  * Erasure of Generic Types

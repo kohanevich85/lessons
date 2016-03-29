@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.generics.examples;
 
 /**
  * Generic Methods and Bounded Type Parameters

@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.generics.extras;
 
 /**
  * Effects of Type Erasure and Bridge Methods
