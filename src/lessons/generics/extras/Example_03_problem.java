@@ -3,7 +3,7 @@ package lessons.generics.extras;
 public class Example_03_problem {
 
     public static void main(String[] args) {
-        Builder builder = new ExtendedBuilderImpl().setField("parent");//.setField2();
+        Builder builder = new DoubleExtendedBuilderImpl().setFieldA("parent");//.setFieldB("children"); //.setFieldC("grandson");
         String result = builder.build();
         System.out.println(result);
     }
@@ -13,38 +13,56 @@ public class Example_03_problem {
     }
 
     static class BuilderImpl implements Builder {
-        private String field;
+        private String fieldA;
 
-        public String getField() {
-            return field;
+        public String getFieldA() {
+            return fieldA;
         }
 
-        public BuilderImpl setField(String field) {
-            this.field = field;
+        public BuilderImpl setFieldA(String fieldA) {
+            this.fieldA = fieldA;
             return this;
         }
 
         @Override
         public String build() {
-            return field;
+            return fieldA;
         }
     }
 
     static class ExtendedBuilderImpl extends BuilderImpl {
-        private String field2;
+        private String fieldB;
 
-        public String getField2() {
-            return field2;
+        public String getFieldB() {
+            return fieldB;
         }
 
-        public ExtendedBuilderImpl setField2(String field2) {
-            this.field2 = field2;
+        public ExtendedBuilderImpl setFieldB(String fieldB) {
+            this.fieldB = fieldB;
             return this;
         }
 
         @Override
         public String build() {
-            return getField() + " " + field2;
+            return getFieldA() + " " + fieldB;
+        }
+    }
+
+    static class DoubleExtendedBuilderImpl extends ExtendedBuilderImpl {
+        private String fieldC;
+
+        public String getFieldC() {
+            return fieldC;
+        }
+
+        public DoubleExtendedBuilderImpl setFieldC(String fieldC) {
+            this.fieldC = fieldC;
+            return this;
+        }
+
+        @Override
+        public String build() {
+            return getFieldA() + " " + getFieldB() + " " + fieldC;
         }
     }
 }
