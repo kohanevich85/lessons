@@ -3,7 +3,7 @@ package lessons.generics.examples;
 /**
  * Examples of Raw Types
  */
-public class Example_3 {
+public class RawType {
 
     public static void main(String[] args) {
         /** For backward compatibility, assigning a parameterized type to its raw type is allowed: */

@@ -3,7 +3,7 @@ package lessons.generics.examples;
 /**
  * Erasure of Generic Methods
  */
-public class Example_15 {
+public class ErasureGenericsMethod {
     public static void main(String[] args) {
 
     }

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Generic Classes and Subtyping
  */
-public class Example_8 {
+public class ClassesAndSubtyping {
     public static void main(String[] args) {
 
         Collection<String> collection = new ArrayList<>();

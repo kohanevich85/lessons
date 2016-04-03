@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Wildcards. Unbounded Wildcards
  */
-public class Example_11 {
+public class UnboundedWildcards {
     public static void main(String[] args) {
 
 

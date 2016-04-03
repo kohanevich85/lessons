@@ -3,7 +3,7 @@ package lessons.generics.examples;
 /**
  * Example of using generics
  */
-public class Example_2 {
+public class PairValue {
     public static void main(String[] args) {
         Pair<String, Integer> p1 = new Pair<>("Even", 8);
         Pair<String, String> p2 = new Pair<>("hello", "world");

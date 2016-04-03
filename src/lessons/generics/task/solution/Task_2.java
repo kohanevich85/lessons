@@ -1,7 +1,6 @@
-package lessons.generics.extras;
+package lessons.generics.task.solution;
 
-public class Example_03_solution {
-
+public class Task_2 {
     public static void main(String[] args) {
         Builder builder = new DoubleExtendedBuilder().setField("parent").setFieldB("child").setFieldC("grandson");
         String result = builder.build();
@@ -18,9 +17,7 @@ public class Example_03_solution {
 
     static class BuilderImpl<T extends BuilderImpl<T>> implements Builder {
         private String fieldA;
-
         private T item;
-
         public String getFieldA() {
             return fieldA;
         }
@@ -30,7 +27,6 @@ public class Example_03_solution {
             this.fieldA = fieldA;
             return (T) this;
         }
-
         @Override
         public String build() {
             return fieldA;
@@ -39,19 +35,15 @@ public class Example_03_solution {
 
     static class ExtendedBuilder<T extends ExtendedBuilder<T>> extends BuilderImpl<T> {
         private String fieldB;
-
         private T item;
-
         public String getFieldB() {
             return fieldB;
         }
-
         @SuppressWarnings("unchecked")
         public T setFieldB(String fieldB) {
             this.fieldB = fieldB;
             return (T) this;
         }
-
         @Override
         public String build() {
             return getFieldA() + " " + fieldB;
@@ -60,16 +52,13 @@ public class Example_03_solution {
 
     static class DoubleExtendedBuilder extends ExtendedBuilder<DoubleExtendedBuilder> {
         private String fieldC;
-
         public String getFieldC() {
             return fieldC;
         }
-
         public DoubleExtendedBuilder setFieldC(String fieldC) {
             this.fieldC = fieldC;
             return this;
         }
-
         @Override
         public String build() {
             return getFieldA() + " " + getFieldB() + " " + getFieldC();

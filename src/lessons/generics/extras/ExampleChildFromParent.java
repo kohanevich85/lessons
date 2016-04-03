@@ -3,7 +3,7 @@ package lessons.generics.extras;
 /**
  * Return child type from parent
  */
-public class Example_07 {
+public class ExampleChildFromParent {
     public static void main(String[] args) {
         AbstractAction<ConcreteActionA> actionA = new ConcreteActionA();
         actionA.execute();

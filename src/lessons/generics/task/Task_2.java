@@ -1,6 +1,6 @@
-package lessons.generics.extras;
+package lessons.generics.task;
 
-public class Example_03_problem {
+public class Task_2 {
 
     public static void main(String[] args) {
         Builder builder = new DoubleExtendedBuilderImpl().setFieldA("parent");//.setFieldB("children"); //.setFieldC("grandson");

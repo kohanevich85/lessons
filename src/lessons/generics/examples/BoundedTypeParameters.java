@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Bounded Type Parameters
  */
-public class Example_5 {
+public class BoundedTypeParameters {
 
     public static void main(String[] args) {
         Box<Integer> integerBox = new Box<Integer>();

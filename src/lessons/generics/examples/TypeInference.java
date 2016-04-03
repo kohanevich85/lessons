@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Type Inference
  */
-public class Example_9 {
+public class TypeInference {
     public static void main(String[] args) {
        /*T result = */ pick("d", new ArrayList<String>()); // which type T would be returned?
 

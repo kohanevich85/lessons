@@ -5,9 +5,15 @@ package lessons.generics.extras;
  */
 public class Example_05 {
     public static void main(String[] args) {
-        Object[] objects = new Object[1];
         String[] strings = new String[1];
-        objects = strings;
+        Object[] objects = strings;
         objects[0] = new Object();
+        f(strings);
+    }
+
+    static void f(String[] st) {
+        for (String s : st) {
+            s.charAt(1);
+        }
     }
 }

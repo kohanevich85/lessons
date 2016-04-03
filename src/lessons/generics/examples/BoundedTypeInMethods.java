@@ -3,9 +3,9 @@ package lessons.generics.examples;
 /**
  * Generic Methods and Bounded Type Parameters
  */
-public class Example_6 {
+public class BoundedTypeInMethods {
     public static void main(String[] args) {
-        int result = Example_6.<String>countGreaterThan(new String[]{"1", "2", "3"}, "2");
+        int result = BoundedTypeInMethods.<String>countGreaterThan(new String[]{"1", "2", "3"}, "2");
         System.out.println(result);
     }
 

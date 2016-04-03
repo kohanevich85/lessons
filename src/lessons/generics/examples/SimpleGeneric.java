@@ -3,7 +3,7 @@ package lessons.generics.examples;
 /**
  * Examples of code with and without generics
  */
-public class Example_1 {
+public class SimpleGeneric {
     public static void main(String[] args) {
         /** non-generic example */
         ObjectBox objBox = new ObjectBox();

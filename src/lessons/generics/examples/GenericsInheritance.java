@@ -3,7 +3,7 @@ package lessons.generics.examples;
 /**
  * Generics, Inheritance, and Subtypes
  */
-public class Example_7 {
+public class GenericsInheritance {
     public static void main(String[] args) {
         Object someObject = new Object();
         Integer someInteger = new Integer(10);

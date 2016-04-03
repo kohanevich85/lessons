@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Lower Bounded Wildcards
  */
-public class Example_12 {
+public class LowerBoundedWildcards {
     public static void main(String[] args) {
         List<Integer> integers = Arrays.asList(1, 2, 3, 4);
         List<Number> numbers = Arrays.asList(1L, 2L, 3L, 4L);

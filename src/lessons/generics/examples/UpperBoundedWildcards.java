@@ -7,7 +7,7 @@ import static java.util.Arrays.asList;
 /**
  * Wildcards. Upper Bounded Wildcards
  */
-public class Example_10 {
+public class UpperBoundedWildcards {
     public static void main(String[] args) {
         List<Integer> li = asList(1, 2, 3);
         System.out.println("sum = " + sumOfList(li));
