@@ -12,8 +12,6 @@ public class ExampleChildFromParent {
         AbstractAction<ConcreteActionB> actionB = new ConcreteActionB();
         actionB.execute();
         actionB.and().pipelineB().with().pipelineB();
-
-        AbstractAction<ConcreteActionB> actionC = null;
     }
 }
 

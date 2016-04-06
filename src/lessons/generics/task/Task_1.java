@@ -58,7 +58,7 @@ class Phone extends Product implements Comparable {
     public int compareTo(Object that) {
         if (that instanceof Phone) {
             Phone thatProduct = (Phone) that;
-            return super.compareTo(that) + this.memory - thatProduct.getMemory();
+            return this.memory - thatProduct.getMemory();
         } else {
             throw new IllegalArgumentException();
         }
@@ -74,7 +74,7 @@ class Camera extends Product implements Comparable {
     public int compareTo(Object that) {
         if (that instanceof Camera) {
             Camera thatProduct = (Camera) that;
-            return super.compareTo(that) + this.megaPixels - thatProduct.getMegaPixels();
+            return this.megaPixels - thatProduct.getMegaPixels();
         } else {
             throw new IllegalArgumentException();
         }
